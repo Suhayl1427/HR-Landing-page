@@ -44,11 +44,7 @@ const BRAND = {
   demo: { label: "Book a demo", href: "/demo" },
 };
 
-const ANNOUNCEMENT = {
-  label: "HR KPI Manager 2.0 is live",
-  linkLabel: "Read the changelog",
-  href: "/changelog",
-};
+
 
 type MenuKey = "platform";
 
@@ -190,7 +186,7 @@ export default function SiteHeader() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50" onMouseLeave={scheduleClose}>
-      <AnnouncementBar collapsed={scrolled} />
+      
 
       <div className="px-3 sm:px-5">
         {/* The morph: full-bleed bar at rest, glass island once you scroll. */}
@@ -273,59 +269,7 @@ function Logo() {
    can float clean. Dismissible.
 ========================================================================== */
 
-function AnnouncementBar({ collapsed }: { collapsed: boolean }) {
-  const [dismissed, setDismissed] = useState(false);
-  const hidden = dismissed || collapsed;
 
-  return (
-    <div
-      aria-hidden={hidden}
-      className={cn(
-        "overflow-hidden bg-[#14131A] text-white transition-[height,opacity] duration-500 motion-reduce:transition-none",
-        EASE,
-        hidden ? "h-0 opacity-0" : "h-9 opacity-100",
-      )}
-    >
-      <div className="relative mx-auto flex h-9 max-w-7xl items-center justify-center gap-2.5 px-4">
-        <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-[#5B3DF5]" />
-        <p className="text-[12.5px] text-white/70">{ANNOUNCEMENT.label}</p>
-
-        <Link
-          href={ANNOUNCEMENT.href}
-          tabIndex={hidden ? -1 : 0}
-          className={cn(
-            "group inline-flex items-center gap-1 rounded-full text-[12.5px] font-medium text-white",
-            "transition-colors duration-200 hover:text-[#F0EDFF]",
-            RING,
-          )}
-        >
-          {ANNOUNCEMENT.linkLabel}
-          <ArrowRight
-            aria-hidden="true"
-            className={cn(
-              "h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 motion-reduce:transition-none",
-              EASE,
-            )}
-          />
-        </Link>
-
-        <button
-          type="button"
-          onClick={() => setDismissed(true)}
-          tabIndex={hidden ? -1 : 0}
-          aria-label="Dismiss announcement"
-          className={cn(
-            "absolute right-4 grid h-6 w-6 place-items-center rounded-full text-white/40",
-            "transition-colors duration-200 hover:bg-white/10 hover:text-white",
-            RING,
-          )}
-        >
-          <X className="h-3.5 w-3.5" />
-        </button>
-      </div>
-    </div>
-  );
-}
 
 /* ============================================================================
    DesktopNav — the signature. A pill tracks the pointer between items with

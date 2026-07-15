@@ -71,32 +71,11 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-6 pb-32 pt-[150px] sm:pb-44 sm:pt-[190px]">
         <div className="mx-auto max-w-3xl text-center">
-          <Link
-            href="/changelog"
-            className={cn(
-              "group inline-flex items-center gap-2 rounded-full border border-[#E9E6E1] bg-white/70 py-1.5 pl-1.5 pr-3.5 text-[12.5px] backdrop-blur",
-              "transition-colors duration-200 hover:border-[#5B3DF5]/25 hover:bg-white",
-              RING,
-              RISE,
-            )}
-          >
-            <span className="rounded-full bg-[#5B3DF5] px-2 py-0.5 text-[11px] font-semibold text-white">
-              New
-            </span>
-            <span className="text-[#43404F]">HR KPI Manager 2.0</span>
-            <ArrowRight
-              aria-hidden="true"
-              className={cn(
-                "h-3.5 w-3.5 text-[#6E6A7C] transition-transform duration-300 group-hover:translate-x-0.5 motion-reduce:transition-none",
-                EASE,
-              )}
-            />
-          </Link>
-
+         
           {/* 'busywork' starts at full ink and recedes to muted as you read it. */}
           <h1
             className={cn(
-              "mt-7 text-[clamp(2.6rem,6.4vw,4.6rem)] font-semibold leading-[1.03] tracking-[-0.04em] text-[#14131A]",
+              "mt-7 text-[clamp(2.6rem,6.4vw,4.6rem)] font-semibold leading-[1.03] tracking-[-0.04em] text-[#5c0634]",
               "font-[family-name:var(--font-grotesk,inherit)]",
               RISE,
               "[animation-delay:90ms]",
