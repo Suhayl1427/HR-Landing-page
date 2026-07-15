@@ -102,9 +102,9 @@ export default function Hero() {
               "[animation-delay:90ms]",
             )}
           >
-            HR, without the{" "}
+            Manage Your Team{" "}
             <span className="animate-[heroRecede_1.1s_cubic-bezier(0.22,1,0.36,1)_900ms_both]">
-              busywork
+              Not the Paperwork
             </span>
           </h1>
 
@@ -115,8 +115,7 @@ export default function Hero() {
               "[animation-delay:170ms]",
             )}
           >
-            Payroll, approvals, org structure and people metrics, all running on
-            one employee record. No re-keying, no month-end scramble.
+            Payroll, attendance, and powerful reporting all in a single, easy-to-use HR platform
           </p>
 
           <div
@@ -130,7 +129,7 @@ export default function Hero() {
               href="/demo"
               className={cn(
                 "group relative inline-flex h-11 items-center gap-1.5 overflow-hidden rounded-full px-5",
-                "bg-[#5B3DF5] text-[15px] font-medium text-white",
+                "bg-[#5c0634] text-[15px] font-medium text-white",
                 "shadow-[0_6px_18px_-6px_rgba(91,61,245,0.55)]",
                 "transition-[transform,background-color,box-shadow] duration-300 motion-reduce:transition-none",
                 "hover:-translate-y-px hover:bg-[#4327D9] hover:shadow-[0_12px_30px_-8px_rgba(91,61,245,0.65)]",

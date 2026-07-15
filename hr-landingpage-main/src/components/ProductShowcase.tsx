@@ -133,12 +133,11 @@ export default function ProductShowcase() {
           </p>
 
           <h2 className="mt-4 text-[clamp(1.9rem,4vw,3rem)] font-semibold leading-[1.1] tracking-[-0.03em] text-white font-[family-name:var(--font-grotesk,inherit)]">
-            The whole of HR, on one screen
+            Spend Less Time Managing HR
           </h2>
 
           <p className="mx-auto mt-5 max-w-lg text-[15.5px] leading-relaxed text-white/50">
-            One employee record, six modules, no tab-hopping. This is what your
-            team actually opens on a Monday morning.
+            Automate payroll, simplify attendance tracking, and generate accurate reports with one powerful platform
           </p>
         </div>
 
