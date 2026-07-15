@@ -120,7 +120,7 @@ const REASONS: Reason[] = [
 const EASE = "ease-[cubic-bezier(0.22,1,0.36,1)]";
 const DISPLAY = "font-[family-name:var(--font-grotesk,inherit)]";
 const RING =
-  "outline-none focus-visible:ring-2 focus-visible:ring-[#5B3DF5] focus-visible:ring-offset-2 focus-visible:ring-offset-white";
+  "outline-none focus-visible:ring-2 focus-visible:ring-[#5c0634] focus-visible:ring-offset-2 focus-visible:ring-offset-white";
 
 const cn = (...values: Array<string | false | null | undefined>) =>
   values.filter(Boolean).join(" ");
@@ -236,7 +236,7 @@ export default function WhyUs() {
                   className={cn(
                     "text-[26px] font-semibold tracking-[-0.02em]",
                     DISPLAY,
-                    stat.accent ? "text-[#5B3DF5]" : "text-[#14131A]",
+                    stat.accent ? "text-[#5c0634]" : "text-[#14131A]",
                   )}
                 >
                   {stat.value}
@@ -252,10 +252,10 @@ export default function WhyUs() {
             href="/demo"
             className={cn(
               "group relative mt-9 inline-flex h-11 items-center gap-1.5 overflow-hidden rounded-full px-5",
-              "bg-[#5B3DF5] text-[14.5px] font-medium text-white",
+              "bg-[#5c0634] text-[14.5px] font-medium text-white",
               "shadow-[0_6px_18px_-6px_rgba(91,61,245,0.55)]",
               "transition-[transform,background-color,box-shadow] duration-300 motion-reduce:transition-none",
-              "hover:-translate-y-px hover:bg-[#4327D9] hover:shadow-[0_12px_30px_-8px_rgba(91,61,245,0.65)]",
+              "hover:-translate-y-px hover:bg-[#4A042A] hover:shadow-[0_12px_30px_-8px_rgba(91,61,245,0.65)]",
               "active:scale-[0.98]",
               EASE,
               RING,
@@ -321,7 +321,7 @@ export default function WhyUs() {
                     "transition-[background-color,border-color,color,box-shadow,transform] duration-500 [transition-delay:200ms] motion-reduce:transition-none",
                     EASE,
                     on
-                      ? "scale-100 border-[#5B3DF5]/30 text-[#5B3DF5] shadow-[0_0_0_4px_rgba(91,61,245,0.08)]"
+                      ? "scale-100 border-[#5C0634]/30 text-[#5C0634] shadow-[0_0_0_4px_rgba(92,6,52,0.08)]"
                       : "scale-95 border-[#E9E6E1] text-[#C9C5CE]",
                   )}
                 >
@@ -347,7 +347,7 @@ export default function WhyUs() {
                       className={cn(
                         "inline-flex rounded-full px-2.5 py-1 text-[11.5px] font-medium",
                         chipIndex === 0
-                          ? "bg-[#F0EDFF] text-[#4327D9]"
+                          ? "bg-[#F8EEF4] text-[#5C0634]"
                           : "border border-[#E9E6E1] bg-[#FAF9F7] text-[#6E6A7C]",
                       )}
                     >
