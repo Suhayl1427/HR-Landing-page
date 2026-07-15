@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -254,35 +254,16 @@ function Logo() {
     <Link
       href="/"
       aria-label={`${BRAND.name} home`}
-      className={cn("group inline-flex items-center gap-2.5 rounded-xl", RING)}
+      className="inline-flex items-center"
     >
-      <span
-        className={cn(
-          "grid h-9 w-9 place-items-center rounded-[10px] bg-[#14131A] text-white",
-          "transition-transform duration-500 group-hover:-rotate-6 motion-reduce:transition-none",
-          EASE,
-        )}
-      >
-        <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" aria-hidden="true">
-          <path
-            d="M12 8.6v3.1M12 11.7H7.6v2.9M12 11.7h4.4v2.9"
-            stroke="currentColor"
-            strokeWidth="1.4"
-            strokeLinecap="round"
-            className="opacity-45 transition-opacity duration-500 group-hover:opacity-90"
-          />
-          <circle
-            cx="12"
-            cy="6.2"
-            r="2.3"
-            className="fill-white transition-colors duration-500 group-hover:fill-[#5B3DF5]"
-          />
-          <circle cx="7.6" cy="16.9" r="2" className="fill-white" />
-          <circle cx="16.4" cy="16.9" r="2" className="fill-white" />
-        </svg>
-      </span>
-
-      <span className={cn("text-[19px] text-[#14131A]", DISPLAY)}>{BRAND.name}</span>
+      <Image
+        src="/images/logo.png"
+        alt="YourOfficeHR"
+        width={220}
+        height={60}
+        priority
+        className="h-12 w-auto"
+      />
     </Link>
   );
 }
@@ -650,7 +631,7 @@ function DemoButton() {
       href={BRAND.demo.href}
       className={cn(
         "group relative inline-flex h-9 items-center gap-1.5 overflow-hidden rounded-full px-4",
-        "bg-[#5B3DF5] text-[13.5px] font-medium text-white",
+        "bg-[#5c0634] text-[13.5px] font-medium text-white",
         "shadow-[0_6px_18px_-6px_rgba(91,61,245,0.55)]",
         "transition-[transform,background-color,box-shadow] duration-300 motion-reduce:transition-none",
         "hover:-translate-y-px hover:bg-[#4327D9] hover:shadow-[0_10px_26px_-8px_rgba(91,61,245,0.65)]",
