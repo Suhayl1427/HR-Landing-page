@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Raleway } from "next/font/google";
+
 
 const raleway = Raleway({ subsets: ["latin"], weight: ["700"], display: "swap" });
 
@@ -168,23 +170,20 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* RIGHT: Placeholder */}
+            {/* RIGHT: Image */}
             <div className="order-1 sm:order-1 lg:order-2">
-              <div
-                className={cn(
-                  "flex h-[420px] w-full flex-col items-center justify-center",
-                  "rounded-[20px] border-2 border-dashed border-[#D9D9D9] bg-[#FCFCFD]",
-                  "text-center",
-                )}
-              >
-                <div className="flex flex-col items-center justify-center px-6">
-                  <div className="text-[#14131A]">Image Placeholder</div>
-                  <div className="mt-2 text-[14.5px] font-medium text-[#6E6A7C]">
-                    Talk to an Expert Illustration
-                  </div>
-                </div>
+              <div className="h-[420px] w-full flex items-center justify-center">
+                <Image
+                  src="/images/talk to expert.png"
+                  alt="Talk to an Expert"
+                  width={500}
+                  height={500}
+                  className="mt-30 w-full max-w-[500px] h-auto object-contain"
+                  priority
+                />
               </div>
             </div>
+
           </div>
         </div>
       </div>
