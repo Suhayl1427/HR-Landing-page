@@ -1,6 +1,10 @@
 # TODO
 
-- [ ] Create `src/components/ContactSection.tsx` (premium two-column contact UI, Tailwind, TypeScript, Raleway 700, fade-up on scroll, semantic form, no submission)
-- [ ] Update `src/app/page.tsx` to render `<ContactSection />` immediately after `<WhyUs />` and before `<Features />`/`<Pricing />`, keeping `<Footer />` last
-- [ ] Run lint/build to ensure TypeScript + Tailwind compile
+- [ ] Implement the navigation simplification in `src/components/SiteHeader.tsx`.
 
+  - [ ] Remove navigation items: Platform, Pricing, Customers, Resources
+  - [ ] Remove ALL dropdown/mega menu logic (PlatformMenu, Platform trigger, DesktopNav/mobile accordion, timers/hover handlers/state)
+  - [ ] Keep only: Logo (left), Sign In link, Book a Demo button
+  - [ ] Ensure responsive rules: Desktop/tablet show Logo | Sign In | Book a Demo; Mobile show Logo and Book a Demo (hide Sign In if needed)
+  - [ ] Remove unused imports/components after deletions
+  - [ ] Ensure no TypeScript/ESLint/build errors for the updated header
