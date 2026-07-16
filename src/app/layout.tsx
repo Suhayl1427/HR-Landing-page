@@ -26,3 +26,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+ // No backend / no submission.
