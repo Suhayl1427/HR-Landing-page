@@ -114,8 +114,8 @@ export default function SiteHeader() {
             "transition-[max-width,height,margin-top,background-color,border-color,box-shadow] duration-[600ms] motion-reduce:transition-none",
             EASE,
             scrolled
-              ? "mt-2.5 h-14 max-w-5xl rounded-full border-[#E9E6E1] bg-[#FAF9F7]/75 shadow-[0_1px_2px_rgba(20,19,26,0.04),0_10px_28px_-12px_rgba(20,19,26,0.16)]"
-              : "mt-0 h-[72px] max-w-7xl rounded-full border-transparent bg-transparent shadow-none",
+              ? "mt-2.5 h-14 max-lg:h-12 max-w-5xl rounded-full border-[#E9E6E1] bg-[#FAF9F7]/75 shadow-[0_1px_2px_rgba(20,19,26,0.04),0_10px_28px_-12px_rgba(20,19,26,0.16)]"
+              : "mt-0 h-[72px] max-lg:h-16 max-w-7xl rounded-full border-transparent bg-transparent shadow-none",
           )}
         >
           <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-4">
@@ -143,7 +143,7 @@ export default function SiteHeader() {
             </div>
 
             {/* Tablet/Mobile actions */}
-            <div className="flex items-center justify-end gap-1">
+            <div className="flex items-center justify-end gap-1 max-lg:gap-0.5 lg:gap-1">
               <SignInLink className="hidden sm:inline-flex lg:inline-flex" />
               <div className="hidden lg:inline-flex">
                 <DemoButton />
@@ -203,7 +203,7 @@ function Logo() {
         width={220}
         height={60}
         priority
-        className="h-12 w-auto"
+        className="h-12 w-auto max-lg:h-9 lg:h-12"
       />
     </Link>
   );
