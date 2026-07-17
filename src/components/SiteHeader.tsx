@@ -118,8 +118,8 @@ export default function SiteHeader() {
               : "mt-0 h-[72px] max-lg:h-16 max-w-7xl rounded-full border-transparent bg-transparent shadow-none",
           )}
         >
-          <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-4">
-            <div className="flex min-w-0 justify-start">
+         <div className="grid h-full grid-cols-[auto_1fr_auto] items-center gap-4">
+            <div className="flex min-w-0 flex-shrink-0 justify-start">
               <Logo />
             </div>
 
@@ -143,19 +143,22 @@ export default function SiteHeader() {
             </div>
 
             {/* Tablet/Mobile actions */}
-            <div className="flex items-center justify-end gap-1 max-lg:gap-0.5 lg:gap-1">
-              <SignInLink className="hidden sm:inline-flex lg:inline-flex" />
-              <div className="hidden lg:inline-flex">
-                <DemoButton />
-              </div>
+          <div className="flex items-center justify-end w-full">
+  {/* Mobile */}
+  <div className="flex w-full items-center justify-end gap-4 lg:hidden">
+    <SignInLink className="inline-flex" />
+    <HamburgerButton
+      open={mobileOpen}
+      onToggle={() => setMobileOpen((v) => !v)}
+    />
+  </div>
 
-              <div className="lg:hidden">
-                <HamburgerButton
-                  open={mobileOpen}
-                  onToggle={() => setMobileOpen((v) => !v)}
-                />
-              </div>
-            </div>
+  {/* Desktop */}
+  <div className="hidden lg:flex items-center gap-3">
+    <SignInLink />
+    <DemoButton />
+  </div>
+</div>
           </div>
 
           {/* Mobile menu panel */}
