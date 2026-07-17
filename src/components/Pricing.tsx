@@ -179,7 +179,7 @@ export default function Pricing() {
   const atCeiling = headcount >= CONFIG.max;
 
   return (
-    <section id="pricing" className="bg-white py-24 sm:py-32">
+<section id="pricing" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div ref={head.ref} className={cn("mx-auto max-w-2xl text-center", rise(head.on))}>
           <p className="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-[#6E6A7C]">

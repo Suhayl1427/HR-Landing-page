@@ -3,10 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import SimpleLandingNav from "./SimpleLandingNav";
 
 
 /* ============================================================================
    site-header.tsx  —  Next.js (App Router) + TypeScript + Tailwind CSS
+
    ----------------------------------------------------------------------------
    Navigation simplified per requirements:
    - Only keep: Logo (left), Sign In, Book a Demo
@@ -64,7 +66,7 @@ export default function SiteHeader() {
               <Logo />
             </div>
 
-            {/* Removed desktop navigation entirely */}
+            <SimpleLandingNav />
 
             <div className="flex items-center justify-end gap-1">
               {/* Responsive: keep existing breakpoint hiding */}

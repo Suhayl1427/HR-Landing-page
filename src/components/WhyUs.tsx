@@ -208,7 +208,7 @@ export default function WhyUs() {
   }, [reduced]);
 
   return (
-    <section id="why" className="bg-white py-24 sm:py-32">
+<section id="why-us" className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[minmax(0,360px)_1fr] lg:gap-20">
         {/* --- the thesis, sticky ------------------------------------------ */}
         <div className="lg:sticky lg:top-28 lg:self-start">

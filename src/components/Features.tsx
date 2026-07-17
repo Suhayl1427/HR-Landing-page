@@ -193,7 +193,7 @@ export default function Features() {
   const strip = useReveal<HTMLDivElement>();
 
   return (
-    <section id="features" className="bg-[#FAF9F7] py-24 sm:py-32">
+<section id="platform" className="bg-[#FAF9F7] py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
         {/* --- header ------------------------------------------------------ */}
         <div ref={head.ref} className={cn("mx-auto max-w-2xl text-center", rise(head.on))}>

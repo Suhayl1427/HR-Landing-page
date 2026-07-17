@@ -74,7 +74,7 @@ export default function FAQSection() {
 
 
   return (
-    <section className="bg-[#FAF9F7]" aria-labelledby="faq-heading">
+<section id="faq" className="bg-[#FAF9F7]" aria-labelledby="faq-heading">
       <div className="mx-auto max-w-[1280px] px-6 pt-[100px] pb-[100px]">
         <div className={motionClass} ref={ref}>
           <div className="flex flex-col items-center text-center">
