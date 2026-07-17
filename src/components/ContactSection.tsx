@@ -68,7 +68,8 @@ export default function ContactSection() {
   return (
 
 
-    <section
+<section
+      id="contact"
       className="bg-[#FAF9F7]"
       aria-labelledby="contact-heading"
     >
