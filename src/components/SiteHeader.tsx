@@ -142,17 +142,19 @@ export default function SiteHeader() {
               })}
             </div>
 
-            {/* Tablet/Mobile actions (hamburger on right) */}
+            {/* Tablet/Mobile actions */}
             <div className="flex items-center justify-end gap-1">
+              <SignInLink className="hidden sm:inline-flex lg:inline-flex" />
+              <div className="hidden lg:inline-flex">
+                <DemoButton />
+              </div>
+
               <div className="lg:hidden">
                 <HamburgerButton
                   open={mobileOpen}
                   onToggle={() => setMobileOpen((v) => !v)}
                 />
               </div>
-
-              <SignInLink className="hidden sm:inline-flex lg:inline-flex" />
-              <DemoButton />
             </div>
           </div>
 
