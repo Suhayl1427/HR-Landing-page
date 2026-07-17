@@ -159,15 +159,15 @@ export default function SiteHeader() {
           </div>
 
           {/* Mobile menu panel */}
-          <div
-            className={cn(
-              "lg:hidden",
-              "overflow-hidden",
-              "transition-[max-height,opacity] duration-300 motion-reduce:transition-none",
-              mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0",
-            )}
-          >
-            <div className="mx-2 mb-2 rounded-[18px] bg-white p-6 shadow-[0_18px_44px_-24px_rgba(20,19,26,0.22)]">
+          <div className="relative">
+            <div
+              className={cn(
+                "lg:hidden absolute right-0 top-full",
+                "origin-top-right overflow-hidden rounded-[18px] bg-white p-6 shadow-[0_18px_44px_-24px_rgba(20,19,26,0.22)]",
+                "transition-[transform,opacity] duration-300 motion-reduce:transition-none",
+                mobileOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none",
+              )}
+            >
               <nav className="flex flex-col gap-5">
                 {NAV.map((item) => {
                   const id = getIdFromHref(item.href);
